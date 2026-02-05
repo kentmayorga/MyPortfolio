@@ -1,0 +1,14 @@
+[
+  {
+    "title": "E-Commerce App",
+    "image": "assets/images/bg.jpg",
+    "description": "Shopping app with cart system",
+    "link": "https://example.com"
+  },
+  {
+    "title": "Student Portal",
+    "image": "assets/images/bg.jpg",
+    "description": "School management system",
+    "link": "https://example.com"
+  }
+]
