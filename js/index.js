@@ -1,16 +1,28 @@
-fetch("data/Project.json")
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById("projects");
+const grid = document.querySelector(".project-grid");
+const toggle = document.getElementById("themeToggle");
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.navbar nav');
 
-    data.forEach(project => {
-      container.innerHTML += `
-        <div class="project-card">
-          <img src="${project.image}">
-          <h3>${project.title}</h3>
-          <p>${project.description}</p>
-          <a href="${project.link}" target="_blank">View Project</a>
-        </div>
-      `;
-    });
+// Fetch projects
+fetch("data/Project.json")
+  .then(res => res.json())
+  .then(projects => {
+    grid.innerHTML = projects.map(p => `
+      <div class="project-card">
+        <img src="${p.image}" alt="${p.title}">
+        <h3>${p.title}</h3>
+        <p>${p.description}</p>
+        <a href="${p.link}" target="_blank">View Project</a>
+      </div>
+    `).join("");
   });
+
+// Dark mode toggle
+toggle.onclick = () => {
+  document.body.classList.toggle("dark");
+};
+
+// Burger menu toggle
+burger.onclick = () => {
+  nav.classList.toggle('active');
+};

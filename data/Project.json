@@ -12,21 +12,9 @@
     "link": "https://example.com"
   },
   {
-    "title": "Student Portal",
+    "title": "Portfolio Website",
     "image": "assets/images/bg.jpg",
-    "description": "School management system",
-    "link": "https://example.com"
-  },
-  {
-    "title": "Student Portal",
-    "image": "assets/images/bg.jpg",
-    "description": "School management system",
-    "link": "https://example.com"
-  },
-  {
-    "title": "Student Portal",
-    "image": "assets/images/bg.jpg",
-    "description": "School management system",
+    "description": "Personal website",
     "link": "https://example.com"
   }
 ]
