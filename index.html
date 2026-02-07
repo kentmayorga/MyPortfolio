@@ -3,54 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kent Mayorga</title>
+  <title>Kent Mayorga | Web Developer</title>
   <link rel="stylesheet" href="css/Main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="navbar">
-  <h2 class="logo">Kent</h2>
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <button id="themeToggle">🌙</button>
-  </nav>
-  <button class="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+  <div class="container nav-wrapper">
+
+    <h2>Kent.</h2>
+
+    <nav id="nav-menu">
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </nav>
+
+    <button class="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <span class="bg-circle"></span>
-    <h1>Hi, I'm Kent <span class="wave">👋</span></h1>
-    <p>Aspiring Web Developer</p>
-  </div>
-  <div class="hero-image">
-    <img src="assets/images/bg.jpg" alt="Kent Mayorga">
-  </div>
-</section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid"></div>
-</section>
+<main class="container">
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Kent <span class="wave">👋</span></h1>
+      <p>Building digital experiences with modern code.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-outline-container">
+        <img src="assets/images/KentMayorga.png" alt="Kent Mayorga">
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <hr>
+    <section id="about" class="reveal">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-content">
+      <p>I'm a passionate web developer with a knack for creating sleek, responsive websites. With a background in computer science and a love for design, I bring ideas to life through code. When I'm not coding, you can find me exploring new technologies or hiking in the great outdoors.</p>
+    </div>
+    <br><br>
+  </section> 
+  <br><br>
+  <hr>
+  <section id="projects" class="reveal">
+    <div class="section-header">
+      <h2>Featured Work</h2>
+      <div class="line"></div>
+    </div>
+    <div class="project-grid"></div> 
+  </section>
+ <br><br>
+  <hr>
+  <section id="contact" class="reveal">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <div class="line"></div>
+    </div>
+    <div class="contact-content">
+      <p>If you'd like to discuss a project or just want to say hello, feel free to reach out!</p>
+      <a href="mailto:kentmayorga@example.com" class="btn-secondary">Send Email</a>
+    </div>
+  </section>
+</main>
 
-<section id="about">
-  <h2>About</h2>
-  <p>I build modern, clean, and responsive websites using HTML, CSS, and JavaScript. I focus on usability, aesthetics, and performance.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: example@email.com</p>
-</section>
-
-<footer>© 2026 Kent Mayorga</footer>
-
+ <br><br><br>
+ <br><br><br>
+<footer class="footer" style="margin:auto; text-align:center; padding:20px 0;">
+  <br>
+  <p>&copy; 2024 Kent Mayorga. All rights reserved.</p>
+</footer>
 <script src="js/index.js"></script>
 </body>
 </html>

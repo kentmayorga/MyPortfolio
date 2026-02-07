@@ -16,5 +16,11 @@
     "image": "assets/images/bg.jpg",
     "description": "Personal website",
     "link": "https://example.com"
+  },
+  {
+    "title": "Portfolio Website",
+    "image": "assets/images/bg.jpg",
+    "description": "Personal website",
+    "link": "https://example.com"
   }
 ]
