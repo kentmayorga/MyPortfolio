@@ -146,12 +146,21 @@
                 <a href="#" class="c-link"><div class="c-link-left"><span class="c-link-type">Twitter</span><span class="c-link-label">@kentmayorga</span></div><span class="c-link-arrow">↗</span></a>
             </div>
             </div>
-            <div class="contact-form reveal reveal-delay-1">
-            <div class="form-row"><label class="form-label">Name</label><input type="text" class="form-input" placeholder="Your name"></div>
-            <div class="form-row"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="you@domain.com"></div>
-            <div class="form-row"><label class="form-label">What are you Concerned about?</label><textarea class="form-input" placeholder="Message me..."></textarea></div>
-            <button class="form-submit">Send message →</button>
-            </div>
+            <form id="contact-form" class="reveal reveal-delay-1">
+                <div class="form-row">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="user_name" class="form-input" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="user_email" class="form-input" placeholder="you@domain.com" required>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" class="form-input" placeholder="Message me..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send message →</button>
+            </form>
         </div>
         </section>
 
@@ -160,7 +169,7 @@
         <div class="footer-copy">© 2026 Kent Mayorga — Cebu City, PH</div>
         <div class="footer-right"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
         </div>
-
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

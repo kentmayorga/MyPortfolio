@@ -81,3 +81,21 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
     }
   });
 });
+
+
+emailjs.init("tlOky2FxM43srezQj"); 
+
+// Handle form submission
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    emailjs.sendForm("service_k84cpxk", "template_ncogvn7", this)
+    .then(function() {
+        alert("Thank you! Your message has been sent.");
+        form.reset(); // Clear form after sending
+    }, function(error) {
+        alert("Oops! Something went wrong: " + JSON.stringify(error));
+    });
+});
