@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
+
+        <nav>
+        <a href="#" class="nav-logo">Kent<em>.</em>dev</a>
+        <ul class="nav-center">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeBtn">[ light ]</button>
+            <a href="#contact" class="nav-cta">Available now</a>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#work" onclick="closeMobile()">Work</a>
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+        </div>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg-text">dev</div>
+        <div class="hero-inner">
+            <div class="hero-text-col">
+            <div class="avail-pill"><span class="avail-dot"></span>Open to Learn — 2026</div>
+            <h1 class="hero-headline">I Learn and build<br>things for<br>the <em class="italic">web.</em></h1>
+            </div>
+            <div class="hero-photo-col">
+            <div class="photo-wrap">
+                <div class="photo-border-1"></div>
+                <div class="photo-border-2"></div>
+                <img src="/Utilities/Images/Mayorga.png" alt="Portrait">
+                <div class="photo-tag"><span class="photo-tag-dot"></span>Based in Cebu City</div>
+            </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            <p class="hero-bio"><strong>Kent Mayorga</strong> — a student web developer who writes clean code and thinks in systems. 
+                   I'd like to learn and build projects that can boosts my skills, from <strong>database schemas</strong> to <strong>polished interfaces</strong>, 
+                   and to always keep things simple, fast, and maintainable. Based in <em>Cebu City</em>, building for anywhere.</p>
+            <div class="hero-meta">
+            <div class="hero-stat-row"><span class="hero-stat-label">Projects</span><span class="hero-stat-num">5</span></div>
+            <div class="hero-stat-row"><span class="hero-stat-label">Years Coding</span><span class="hero-stat-num">3+</span></div>
+            <div class="hero-stat-row"><span class="hero-stat-label">Clients served</span><span class="hero-stat-num">None</span></div>
+            </div>
+        </div>
+        </div>
+
+        <div class="section-divider"><span class="divider-num">01</span><div class="divider-line"></div><span class="divider-label">About me</span></div>
+
+        <section id="about" class="section">
+        <div class="about-layout">
+            <div class="reveal">
+            <div class="sidebar-label">Who I am</div>
+            <h2 class="sidebar-heading">The<br><em>craft</em><br>first.</h2>
+            <div class="tech-list">
+                <div class="tech-item"><div class="tech-dot"></div>Node.js / Express<span>Beginner</span></div>
+                <div class="tech-item"><div class="tech-dot"></div>PostgreSQL / MySQL<span>Intermediate</span></div>
+                <div class="tech-item"><div class="tech-dot"></div>TypeScript<span>Beginner</span></div>
+                <div class="tech-item"><div class="tech-dot"></div>TailwindCSS<span>Expert</span></div>
+                <div class="tech-item"><div class="tech-dot"></div>Figma<span>Comfortable</span></div>
+            </div>
+            </div>
+            <div class="about-body reveal reveal-delay-1">
+            <p>I got into web development because I liked the idea of <strong>making things real</strong>, something that works, that people can actually use. That instinct still drives everything I build today.</p>
+            <p>My background spans both frontend and backend. I don't believe in artificial walls between the two. A developer who understands the <em>whole system</em> makes better decisions at every layer. From how an API is structured to how a loading state feels to a user.</p>
+            <p>I'm drawn to <strong>Finding Easy Solutions to hard task</strong>. The right tool for the actual job.</p>
+            <p>Currently a student making projects and collaborations. If you have something interesting to build, I'd like to hear about it.</p>
+            <div class="skills-row">
+                <div class="skill-cell"><div class="skill-cell-icon">⚙️</div><div class="skill-cell-name">Backend Systems</div><div class="skill-cell-sub">APIs, databases, auth</div></div>
+                <div class="skill-cell"><div class="skill-cell-icon">🖥️</div><div class="skill-cell-name">Frontend Dev</div><div class="skill-cell-sub">Bootsrap, JS, performance, UX</div></div>
+                <div class="skill-cell"><div class="skill-cell-icon">🔗</div><div class="skill-cell-name">Full Stack</div><div class="skill-cell-sub">End-to-end ownership</div></div>
+                <div class="skill-cell"><div class="skill-cell-icon">🚀</div><div class="skill-cell-name">Deployment</div><div class="skill-cell-sub">CI/CD, Docker, VPS</div></div>
+                <div class="skill-cell"><div class="skill-cell-icon">🎨</div><div class="skill-cell-name">UI Polish</div><div class="skill-cell-sub">Figma and Vibe Code UI</div></div>
+                <div class="skill-cell"><div class="skill-cell-icon">📐</div><div class="skill-cell-name">Architecture</div><div class="skill-cell-sub">Clean, scalable design using Gemini API</div></div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="section-divider"><span class="divider-num">02</span><div class="divider-line"></div><span class="divider-label">Selected work</span></div>
+
+        <section id="work" class="section">
+        <div class="work-list">
+            <div class="work-item reveal"><div class="work-year">2025-2026</div><div class="work-content"><div class="work-title">Community Events Submission Platform</div><div class="work-tags-inline"><span class="w-tag">DotNet</span><span class="w-tag">MySql</span><span class="w-tag">Full Stack</span></div><div class="work-desc">A platform where users can submit events (like workshops, meetups, webinars, local community activities) but all submissions need admin approval before being publicly visible. This ensures quality, legitimacy, and prevents spam or inappropriate content.</div></div><div class="work-arrow">→</div></div>
+            <div class="work-item reveal reveal-delay-1"><div class="work-year">2025</div><div class="work-content"><div class="work-title">Barangay Portal</div><div class="work-tags-inline"><span class="w-tag">React</span><span class="w-tag">Node.js</span><span class="w-tag">Gov Tech</span></div><div class="work-desc">Digital document request system for a local government unit. Cut average processing time from 3 days to under 4 hours. Serving 12,000+ residents.</div></div><div class="work-arrow">→</div></div>
+            <div class="work-item reveal"><div class="work-year">2025</div><div class="work-content"><div class="work-title">Coffee Shop Equipments Inventory Management</div><div class="work-tags-inline"><span class="w-tag">DotNet</span><span class="w-tag">MySql</span><span class="w-tag">Full Stack</span></div><div class="work-desc">A Windows form application that will manage selling, buying, and Inventory for Coffee Shop Equipment.</div></div><div class="work-arrow">→</div></div>
+        </div>
+        </section>
+
+        <div class="section-divider"><span class="divider-num">03</span><div class="divider-line"></div><span class="divider-label">Services</span></div>
+
+        <section id="services" class="section">
+        <div class="services-layout reveal">
+            <div class="svc-card"><div class="svc-num">01</div><div class="svc-title">Web Application Development</div><p class="svc-desc">Full-stack web apps built with TailWindCSS and .Net features</p></div>
+            <div class="svc-card"><div class="svc-num">02</div><div class="svc-title">Frontend Engineering</div><p class="svc-desc">Translating designs into fast, accessible, responsive interfaces. I care about render performance, code maintainability, and the actual experience of using what I build.</p></div>
+            <div class="svc-card"><div class="svc-num">03</div><div class="svc-title">API & Backend Development</div><p class="svc-desc">RESTful and GraphQL APIs, authentication systems, database modeling, and server infrastructure. Reliable backends that don't surprise you in production.</p></div>
+            <div class="svc-card"><div class="svc-num">04</div><div class="svc-title">Code Consulting & Review</div><p class="svc-desc">Auditing existing codebases, identifying bottlenecks, and helping teams establish patterns that scale. I've fixed more broken projects than I've built from scratch.</p></div>
+        </div>
+        <!-- <div class="process-row reveal" style="margin-top:1px;">
+            <div class="process-step"><div class="process-step-num">I</div><div class="process-step-title">Understand</div><p class="process-step-desc">I ask until I know what success looks like — not just the feature list, but the actual problem.</p></div>
+            <div class="process-step"><div class="process-step-num">II</div><div class="process-step-title">Architect</div><p class="process-step-desc">Plan the data model, API surface, and component structure before writing a single line of code.</p></div>
+            <div class="process-step"><div class="process-step-num">III</div><div class="process-step-title">Build</div><p class="process-step-desc">Iterative development with regular check-ins. Working software at every milestone.</p></div>
+            <div class="process-step"><div class="process-step-num">IV</div><div class="process-step-title">Deliver</div><p class="process-step-desc">Deployed, documented, handed over cleanly. You own it — I make sure you can maintain it.</p></div>
+        </div> -->
+        </section>
+<!-- 
+        <div class="section-divider"><span class="divider-num">04</span><div class="divider-line"></div><span class="divider-label">What clients say</span></div> -->
+
+        <!-- <section class="section">
+        <div class="testi-grid reveal">
+            <div class="testi-cell"><p class="testi-quote">He doesn't just write code — he asks the right questions first. The Barangay Portal has genuinely changed how we serve residents.</p><div class="testi-meta"><div class="testi-initials ti-1">RM</div><div><div class="testi-name">Ricardo Mendoza</div><div class="testi-role">Barangay Captain, Nueva Ecija</div></div></div></div>
+            <div class="testi-cell"><p class="testi-quote">Delivered exactly what was scoped, on time. No drama, no scope creep. The dashboard is still what we demo most in sales calls.</p><div class="testi-meta"><div class="testi-initials ti-2">AL</div><div><div class="testi-name">Ana Lim</div><div class="testi-role">Founder, Tandem Analytics</div></div></div></div>
+            <div class="testi-cell"><p class="testi-quote">I've worked with five developers in the last two years. Kai is the only one I've brought back for a second project. The code is clean, communication is clear.</p><div class="testi-meta"><div class="testi-initials ti-3">JR</div><div><div class="testi-name">Jerome Reyes</div><div class="testi-role">CTO, Harvest Market</div></div></div></div>
+            <div class="testi-cell"><p class="testi-quote">Our students use this app in areas with poor signal and it works. That offline-first decision made all the difference. Highly recommend.</p><div class="testi-meta"><div class="testi-initials ti-4">CP</div><div><div class="testi-name">Clarissa Patdu</div><div class="testi-role">ED, Kumpas Foundation</div></div></div></div>
+        </div>
+        </section> -->
+
+        <div class="section-divider"><span class="divider-num">04</span><div class="divider-line"></div><span class="divider-label">Get in touch</span></div>
+
+        <section id="contact" class="section">
+        <div class="contact-layout">
+            <div class="reveal">
+            <h2 class="contact-heading">Let's Build and<br>Learn <em>together.</em></h2>
+            <p class="contact-sub">I'm taking on freelance projects for 2026. Whether it's a new build, a messy codebase that needs fixing, or something in between — reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:kai@kaisantos.dev" class="c-link"><div class="c-link-left"><span class="c-link-type">Email</span><span class="c-link-label">kentmayorga@gmail.com</span></div><span class="c-link-arrow">↗</span></a>
+                <a href="#" class="c-link"><div class="c-link-left"><span class="c-link-type">GitHub</span><span class="c-link-label">github.com/kentmayorga</span></div><span class="c-link-arrow">↗</span></a>
+                <a href="#" class="c-link"><div class="c-link-left"><span class="c-link-type">LinkedIn</span><span class="c-link-label">linkedin.com/in/kentmayorga</span></div><span class="c-link-arrow">↗</span></a>
+                <a href="#" class="c-link"><div class="c-link-left"><span class="c-link-type">Twitter</span><span class="c-link-label">@kentmayorga</span></div><span class="c-link-arrow">↗</span></a>
+            </div>
+            </div>
+            <div class="contact-form reveal reveal-delay-1">
+            <div class="form-row"><label class="form-label">Name</label><input type="text" class="form-input" placeholder="Your name"></div>
+            <div class="form-row"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="you@domain.com"></div>
+            <div class="form-row"><label class="form-label">What are you Concerned about?</label><textarea class="form-input" placeholder="Message me..."></textarea></div>
+            <button class="form-submit">Send message →</button>
+            </div>
+        </div>
+        </section>
+
+        <div class="footer-wrap">
+        <div class="footer-logo">Kent<em>.</em>dev</div>
+        <div class="footer-copy">© 2026 Kent Mayorga — Cebu City, PH</div>
+        <div class="footer-right"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
